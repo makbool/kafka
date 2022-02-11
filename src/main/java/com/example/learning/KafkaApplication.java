@@ -16,7 +16,7 @@ public class KafkaApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate) {
 		return args -> {
-			kafkaTemplate.send("coding", "I love Kafka with Spring Boot");
+			kafkaTemplate.send("coding", "Kafka with Spring Boot is Fun Learning");
 		};
 //		return new CommandLineRunner() {			
 //			@Override
